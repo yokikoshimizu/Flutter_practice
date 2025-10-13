@@ -1,0 +1,28 @@
+^C:\USERS\HEPPO\STUDIOPROJECTS\SAMPLE\BUILD\WINDOWS\X64\CMAKEFILES\E743673F592CD29FE5D3298AD4EEFE7A\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\heppo\flutter PROJECT_DIR=C:\Users\heppo\StudioProjects\sample FLUTTER_ROOT=C:\Users\heppo\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\heppo\StudioProjects\sample\windows\flutter\ephemeral PROJECT_DIR=C:\Users\heppo\StudioProjects\sample FLUTTER_TARGET=C:\Users\heppo\StudioProjects\sample\lib\main.dart DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9WRVJTSU9OPTMuMzUuMg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDVkYjk2ODkwOA==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049YThiZmRmYzM5NA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjA= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\heppo\StudioProjects\sample\.dart_tool\package_config.json C:/Users/heppo/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HEPPO\STUDIOPROJECTS\SAMPLE\BUILD\WINDOWS\X64\CMAKEFILES\255AF49013B76164C2A334057A5B438B\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HEPPO\STUDIOPROJECTS\SAMPLE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/heppo/StudioProjects/sample/windows -BC:/Users/heppo/StudioProjects/sample/build/windows/x64 --check-stamp-file C:/Users/heppo/StudioProjects/sample/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
