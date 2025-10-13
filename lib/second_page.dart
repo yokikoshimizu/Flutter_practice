@@ -17,7 +17,7 @@ class SecondPage extends StatelessWidget {
             children: [
               Text(name,
               style: TextStyle(
-                fontSize: 50
+                fontSize: 55
               )),
               ElevatedButton(
                 onPressed: (){

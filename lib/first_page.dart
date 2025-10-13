@@ -14,6 +14,7 @@ class FirstPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextField(
                   onChanged: (text){
@@ -22,8 +23,10 @@ class FirstPage extends StatelessWidget {
               ),
                   ElevatedButton(
                     onPressed: (){
+                      //ここのNavigator.pushの中のコードの意味はよくわからない部分があります
                       Navigator.push(
                         context,
+                        //builder: (context)という書き方の構造がわかっていません。:はどういう意味なのか気になります
                         MaterialPageRoute(builder: (context) => SecondPage(nameText),
                         ),
                       );
