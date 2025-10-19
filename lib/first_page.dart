@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
-  const FirstPage({super.key}); // ← StatelessWidgetはconst推奨
+  final List<String> entries = <String>['A', 'B', 'C'];
 
   @override
   Widget build(BuildContext context) {
@@ -9,25 +9,16 @@ class FirstPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('List'),
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(8),
-        children: <Widget>[
-          Container(
-            height: 50,
-            color: Colors.amber[600],
-            child: const Center(child: Text('Entry A')),
-          ),
-          Container(
-            height: 50,
-            color: Colors.amber[500],
-            child: const Center(child: Text('Entry B')),
-          ),
-          Container(
-            height: 50,
-            color: Colors.amber[100],
-            child: const Center(child: Text('Entry C')),
-          ),
-        ],
+      body: ListView.builder(
+          itemCount: entries.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Center(
+              child: Container(
+                height: 50,
+                child: Center(child: Text('Entry ${entries[index]}')),
+              ),
+            );
+          },
       ),
     );
   }
